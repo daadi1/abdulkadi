@@ -1,0 +1,142 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #2f3640;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #273c75, #40739e);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffd32a;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #dff9fb, #c7ecee);
+  border-bottom: 4px solid #00a8ff;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #00a8ff;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #0984e3;
+  transform: translateY(-2px);
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  flex: 1 1 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+  font-size: 36px;
+  color: #00a8ff;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #273c75;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.socials {
+  margin-top: 10px;
+}
+
+.socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #fbc531;
+}

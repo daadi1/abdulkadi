@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #93c5fd, #a5b4fc);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      color: #1e3a8a;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .contact-box h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #1e3a8a;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      background: rgba(255, 255, 255, 0.8);
+      color: #1e3a8a;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      background-color: #fff;
+      box-shadow: 0 0 0 3px #bfdbfe;
+    }
+
+    button {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 500px) {
+      .contact-box {
+        padding: 25px;
+      }
+
+      .contact-box h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contact-box">
+    <h2>Contact Me</h2>
+
+    <div class="contact-info">
+      <p><strong>Email:</strong> abdulkadirhusseinali1@gmail.com</p>
+      <p><strong>Location:</strong> Mogadishu, Somalia</p>
+    </div>
+
+    <form action="mailto:abdulkadirhusseinali1@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+      <button type="submit">🚀 Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>
